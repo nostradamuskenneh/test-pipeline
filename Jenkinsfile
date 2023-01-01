@@ -70,7 +70,7 @@ pipeline {
                 sh '''
                
                 ls 
-		ls -la
+		uname -a
                 pwd
               
                 '''

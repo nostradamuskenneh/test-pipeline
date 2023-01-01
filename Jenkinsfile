@@ -17,6 +17,7 @@ pipeline {
                 sh '''
                 ls 
                 pwd
+                echo get_current_time_date
                 '''
             }
         }

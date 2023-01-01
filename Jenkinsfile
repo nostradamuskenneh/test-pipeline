@@ -85,6 +85,7 @@ pipeline {
                 pwd
                 uname -r
                 hostname -I
+		hostname
                 '''
             }
         }

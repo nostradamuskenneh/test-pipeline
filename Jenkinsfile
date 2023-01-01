@@ -15,6 +15,7 @@ pipeline {
                 sh '''
                 ls 
                 pwd
+                uname -r
                 '''
             }
         }

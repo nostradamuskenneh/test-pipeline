@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+   agent {
+     label ("node1 || node2 || node3 || node4")
+            }
     
     options {
       timeout(time: 1, unit: 'HOURS') 

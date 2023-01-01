@@ -13,9 +13,6 @@ pipeline {
   }
     stages {
         stage('Hello') {
-          def get_current_time_date = {
-            return 'hoge'
-        }
 
        
             steps {

@@ -13,8 +13,14 @@ pipeline {
   }
     stages {
         stage('Hello') {
+          def get_current_time_date = {
+            return 'hoge'
+        }
+
+       
             steps {
                 sh '''
+                 echo get_current_time_date()
                 ls 
                 pwd
                 echo get_current_time_date
@@ -22,13 +28,7 @@ pipeline {
             }
         }
        
-        stage ('blah') {
-        def get_current_time_date = {
-            return 'hoge'
-        }
-
-        echo get_current_time_date()
-    }
+ 
      stage('clone') {
             steps {
                 sh '''

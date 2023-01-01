@@ -10,5 +10,13 @@ pipeline {
                 '''
             }
         }
+     stage('clone') {
+            steps {
+                sh '''
+                ls 
+                pwd
+                '''
+            }
+        }
     }
 }

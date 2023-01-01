@@ -17,10 +17,10 @@ pipeline {
        
             steps {
                 sh '''
-                 echo get_current_time_date()
+               
                 ls 
                 pwd
-                echo get_current_time_date
+              
                 '''
             }
         }

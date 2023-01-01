@@ -172,7 +172,7 @@ pipeline {
             }
         }
 
-        stage('push-to-dockerhub-pro') {
+        stage('push-to-dockerhub-pro1') {
             steps {
                 sh '''
                 ls 
@@ -181,7 +181,7 @@ pipeline {
             }
         }
 	    
-        stage('Hello') {
+        stage('Hello2') {
 
        
             steps {

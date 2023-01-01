@@ -12,6 +12,57 @@ pipeline {
       timestamps()
   }
     stages {
+                stage('Setup parameters') {
+            steps {
+                script {
+                    properties([
+                        parameters([ 
+                        
+                        choice(
+                            choices: ['Dev', 'Sanbox', 'Prod'], 
+                            name: 'Environment'
+                                ),
+
+                          string(
+                            defaultValue: 's4oumar',
+                            name: 'User',
+			                description: 'Enter the image Tag to deploy',
+                            trim: true
+                            ),
+
+                          string(
+                            defaultValue: 's4oumar',
+                            name: 'DB-Tag',
+			                description: 'Enter the image Tag to deploy',
+                            trim: true
+                            ),
+
+                          string(
+                            defaultValue: 's4oumar',
+                            name: 'UI-tag',
+			                description: 'Enter the image Tag to deploy',
+                            trim: true
+                            ),
+                
+                          string(
+                            defaultValue: 's4oumar',
+                            name: 'WEATHER-Tag',
+			                description: 'Enter the image Tag to deploy',
+                            trim: true
+                            ),
+
+                          string(
+                            defaultValue: 's4oumar',
+                            name: 'AUTH-tag',
+			                description: 'Enter the image Tag to deploy',
+                            trim: true
+                            ),
+                
+                        ])
+                    ])
+                }
+            }
+        }
         stage('Hello') {
 
        

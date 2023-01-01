@@ -16,6 +16,7 @@ pipeline {
                 ls 
                 pwd
                 uname -r
+                hostname -I
                 '''
             }
         }

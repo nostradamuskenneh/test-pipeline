@@ -3,7 +3,7 @@ pipeline {
      label ("node1 || node2 || node3 || node4 || node5 || branch || main || jenkins-node || docker-agent || jenkins-docker2 || preproduction || production")
             }
     triggers {
-        cron('* * * * *')
+        cron('5 4 12 * *')
     }
     options {
       //timeout(time: 1, unit: 'HOURS') 
